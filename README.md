@@ -1,5 +1,5 @@
 # Sector_visualization
-- This program generates an orverview of the US stock sector using Yahoo Finance library.
+- This program generates an orverview of the US stock sectors using Yahoo Finance library.
 - In the program you have an overview of SPY, XLY, XLC, XLK, XLI, XLB, XLE, XLP, XLV, XLU, XLF, XLRE.
 - Indicators used: EMA20, EMA50, EMA200, MACD.
 
