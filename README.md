@@ -2,7 +2,7 @@
 This program generates an orverview of the US stock sector using Yahoo Finance library.
 
 # Screenshot
-![Screenshot.png]
+![Screenshot](Screenshot.png)
 
 # Explanation
 - This program uses the Symbol.py library that abstracts Yahoo Finance, so the source of the data can be easily swapped to obtain the same result.
