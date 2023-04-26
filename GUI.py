@@ -76,7 +76,7 @@ class MainWindow(QtWidgets.QTabWidget):
 def main():
     app = QtWidgets.QApplication(sys.argv)
     mw = MainWindow()
-    mw.setWindowTitle('Testing Libs')
+    mw.setWindowTitle('Sectors')
     mw.show()
     sys.exit(app.exec_())
 
