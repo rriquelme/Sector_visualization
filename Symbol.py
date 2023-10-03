@@ -60,7 +60,8 @@ class Symbol(object):
         temp["High"] = temp["High"].apply(lambda x: float("{:.2f}".format(x)))
         temp["Low"] = temp["Low"].apply(lambda x: float("{:.2f}".format(x)))
         temp["Volume"] = temp["Volume"].apply(lambda x: float("{:.0f}".format(x)))
-        self.data = self.data.iloc[:-_last].append(temp).rename(lambda x:x.date() if isinstance(x, datetime.datetime) else x)
+        #self.data = self.data.iloc[:-_last].append(temp).rename(lambda x:x.date() if isinstance(x, datetime.datetime) else x)
+        self.data = pd.concat([self.data.iloc[:-_last],temp]).rename(lambda x:x.date() if isinstance(x, datetime.datetime) else x)
     
     def sma (self,value = 2): 
         if value> self.data.shape[0]:
